@@ -1,0 +1,582 @@
+{
+  "canvas": {
+    "version": "2.2.2",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -50.333333333333336,
+    "scrollLeft": -50.33333333333336,
+    "zoomLevel": 0.9,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": true,
+      "columnPrimaryKey": true,
+      "columnUnique": true,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    }
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "personas",
+        "comment": "",
+        "columns": [
+          {
+            "name": "persona",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "d9ddf375-037f-4c5b-aa3b-a39a48a980dd"
+          },
+          {
+            "name": "apellido",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "51570dbc-0567-40c0-803e-214f43c7f3cb"
+          },
+          {
+            "name": "nombre",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "03d3d3dd-447d-478b-9fd2-0fe1858e5246"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 121,
+          "top": 50,
+          "zIndex": 110,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "e4b581e6-e7ff-45aa-a875-7945a71a384d"
+      },
+      {
+        "name": "docentes",
+        "comment": "",
+        "columns": [
+          {
+            "name": "docente",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "ad9ce10d-687a-4144-8825-f4f591392f48"
+          },
+          {
+            "name": "persona",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "da18796c-56e9-4ecd-95cd-d0a3e23d6213"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 79,
+          "top": 382,
+          "zIndex": 93,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "afaaf9ee-fc12-4b32-981b-46ecb38b36a6"
+      },
+      {
+        "name": "nodocentes",
+        "comment": "",
+        "columns": [
+          {
+            "name": "nodocente",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 67.39006042480469,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "6e5f5d24-cf32-4d19-bb97-1e5b91799ec0"
+          },
+          {
+            "name": "persona",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "208a994a-ba3e-4989-ac7b-d45657d3284c"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 695,
+          "top": 29,
+          "zIndex": 99,
+          "widthName": 73.6170654296875,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "acb5a686-0c05-4d63-a3fa-b37f481c8499"
+      },
+      {
+        "name": "participaciones",
+        "comment": "",
+        "columns": [
+          {
+            "name": "participacion",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 81.07907104492188,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "5f0fb402-441e-465f-970d-f3ca1bb0e137"
+          },
+          {
+            "name": "persona",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "e31dd4f1-43e4-43a3-8ded-dd90533550be"
+          },
+          {
+            "name": "proyecto",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "02e2928b-9bc0-4acf-81b0-cc739c013660"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 686.667,
+          "top": 203.3341,
+          "zIndex": 142,
+          "widthName": 94.63807678222656,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "db0afc65-9528-411b-86a3-5f025b10e798"
+      },
+      {
+        "name": "proyectos",
+        "comment": "",
+        "columns": [
+          {
+            "name": "proyecto",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "214f88bf-2864-42df-af78-0046bb58f4aa"
+          },
+          {
+            "name": "titulo",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "52cf6c05-2915-42c2-a246-c1b5f934e25b"
+          },
+          {
+            "name": "descripcion",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 72.00506591796875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "3a951a7d-cdcd-40c9-8fbc-61338cbfb42c"
+          },
+          {
+            "name": "fecha_inicio",
+            "comment": "",
+            "dataType": "DATE",
+            "default": "now()",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 73.34405517578125,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "ca6ba6dc-b804-4598-8e75-8718ad4e98ee"
+          },
+          {
+            "name": "fecha_fin",
+            "comment": "",
+            "dataType": "DATE",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "e1090cd9-37c6-41d2-a50d-cfb7f781c1de"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 798.8883,
+          "top": 446.6667,
+          "zIndex": 167,
+          "widthName": 61.69602966308594,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "9a61ff38-59e0-482f-a24c-cb40c67d5c7c"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "e4b581e6-e7ff-45aa-a875-7945a71a384d",
+          "columnIds": [
+            "d9ddf375-037f-4c5b-aa3b-a39a48a980dd"
+          ],
+          "x": 318,
+          "y": 180.5,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "afaaf9ee-fc12-4b32-981b-46ecb38b36a6",
+          "columnIds": [
+            "da18796c-56e9-4ecd-95cd-d0a3e23d6213"
+          ],
+          "x": 276,
+          "y": 382,
+          "direction": "top"
+        },
+        "constraintName": "fk__to_",
+        "visible": true,
+        "id": "04f2c8a3-f9e2-43bf-9087-72f111368407"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "e4b581e6-e7ff-45aa-a875-7945a71a384d",
+          "columnIds": [
+            "d9ddf375-037f-4c5b-aa3b-a39a48a980dd"
+          ],
+          "x": 515,
+          "y": 82.625,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "acb5a686-0c05-4d63-a3fa-b37f481c8499",
+          "columnIds": [
+            "208a994a-ba3e-4989-ac7b-d45657d3284c"
+          ],
+          "x": 695,
+          "y": 84,
+          "direction": "left"
+        },
+        "constraintName": "fk__to_",
+        "visible": true,
+        "id": "8f89cb82-37e1-4f06-8b7d-08eebf51566b"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "e4b581e6-e7ff-45aa-a875-7945a71a384d",
+          "columnIds": [
+            "d9ddf375-037f-4c5b-aa3b-a39a48a980dd"
+          ],
+          "x": 515,
+          "y": 147.875,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "db0afc65-9528-411b-86a3-5f025b10e798",
+          "columnIds": [
+            "e31dd4f1-43e4-43a3-8ded-dd90533550be"
+          ],
+          "x": 686.667,
+          "y": 268.58410000000003,
+          "direction": "left"
+        },
+        "constraintName": "fk_personas_to_",
+        "visible": true,
+        "id": "d97266cd-de94-44e9-8269-4922d57f8c4e"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "9a61ff38-59e0-482f-a24c-cb40c67d5c7c",
+          "columnIds": [
+            "214f88bf-2864-42df-af78-0046bb58f4aa"
+          ],
+          "x": 1002.5603275878906,
+          "y": 446.6667,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "db0afc65-9528-411b-86a3-5f025b10e798",
+          "columnIds": [
+            "02e2928b-9bc0-4acf-81b0-cc739c013660"
+          ],
+          "x": 894.206535522461,
+          "y": 333.83410000000003,
+          "direction": "bottom"
+        },
+        "constraintName": "fk__to_participaciones",
+        "visible": true,
+        "id": "1478e22a-30c0-4229-a86f-e03c758f4c66"
+      }
+    ]
+  }
+}
