@@ -3,8 +3,8 @@
     "version": "2.2.2",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -50.333333333333336,
-    "scrollLeft": -50.33333333333336,
+    "scrollTop": -50.3333333333333,
+    "scrollLeft": -99.66666666666666,
     "zoomLevel": 0.9,
     "show": {
       "tableComment": true,
@@ -118,7 +118,7 @@
           "active": false,
           "left": 121,
           "top": 50,
-          "zIndex": 110,
+          "zIndex": 3,
           "widthName": 60,
           "widthComment": 60
         },
@@ -180,7 +180,7 @@
           "active": false,
           "left": 79,
           "top": 382,
-          "zIndex": 93,
+          "zIndex": 1,
           "widthName": 60,
           "widthComment": 60
         },
@@ -242,7 +242,7 @@
           "active": false,
           "left": 695,
           "top": 29,
-          "zIndex": 99,
+          "zIndex": 2,
           "widthName": 73.6170654296875,
           "widthComment": 60
         },
@@ -321,13 +321,36 @@
               "widthDefault": 60
             },
             "id": "02e2928b-9bc0-4acf-81b0-cc739c013660"
+          },
+          {
+            "name": "participacion_tipo",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 110.75810241699219,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "06e87b75-00f6-4377-89a9-c7874c7d31b1"
           }
         ],
         "ui": {
           "active": false,
           "left": 686.667,
           "top": 203.3341,
-          "zIndex": 142,
+          "zIndex": 22,
           "widthName": 94.63807678222656,
           "widthComment": 60
         },
@@ -458,12 +481,97 @@
           "active": false,
           "left": 798.8883,
           "top": 446.6667,
-          "zIndex": 167,
+          "zIndex": 5,
           "widthName": 61.69602966308594,
           "widthComment": 60
         },
         "visible": true,
         "id": "9a61ff38-59e0-482f-a24c-cb40c67d5c7c"
+      },
+      {
+        "name": "",
+        "comment": "",
+        "columns": [
+          {
+            "name": "participacion_tipo",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 110.75810241699219,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "197ce8d6-168e-4c82-94a1-a3b9c182a12e"
+          },
+          {
+            "name": "titulo",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "08da2417-0dd9-44e1-84d2-7d7352f53f1f"
+          },
+          {
+            "name": "descripcion",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 72.00506591796875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "8439e0de-8548-424a-84f1-5b49c276fae3"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1299.7772,
+          "top": 165.4449,
+          "zIndex": 31,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "0c83c9d3-aeff-4bae-ae6e-0108473564dd"
       }
     ],
     "indexes": []
@@ -544,7 +652,7 @@
             "e31dd4f1-43e4-43a3-8ded-dd90533550be"
           ],
           "x": 686.667,
-          "y": 268.58410000000003,
+          "y": 278.83410000000003,
           "direction": "left"
         },
         "constraintName": "fk_personas_to_",
@@ -569,13 +677,39 @@
           "columnIds": [
             "02e2928b-9bc0-4acf-81b0-cc739c013660"
           ],
-          "x": 894.206535522461,
-          "y": 333.83410000000003,
+          "x": 909.0460512084961,
+          "y": 354.33410000000003,
           "direction": "bottom"
         },
         "constraintName": "fk__to_participaciones",
         "visible": true,
         "id": "1478e22a-30c0-4229-a86f-e03c758f4c66"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "0c83c9d3-aeff-4bae-ae6e-0108473564dd",
+          "columnIds": [
+            "197ce8d6-168e-4c82-94a1-a3b9c182a12e"
+          ],
+          "x": 1299.7772,
+          "y": 230.6949,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "db0afc65-9528-411b-86a3-5f025b10e798",
+          "columnIds": [
+            "06e87b75-00f6-4377-89a9-c7874c7d31b1"
+          ],
+          "x": 1131.425102416992,
+          "y": 278.83410000000003,
+          "direction": "right"
+        },
+        "constraintName": "fk__to_participaciones",
+        "visible": true,
+        "id": "7abc07b5-2006-460a-8a11-dcbf8ae38c4e"
       }
     ]
   }
