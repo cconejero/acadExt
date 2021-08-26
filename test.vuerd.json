@@ -3,8 +3,8 @@
     "version": "2.2.2",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -50.3333333333333,
-    "scrollLeft": -99.66666666666666,
+    "scrollTop": -260,
+    "scrollLeft": -617.666666666667,
     "zoomLevel": 0.9,
     "show": {
       "tableComment": true,
@@ -385,6 +385,29 @@
             "id": "214f88bf-2864-42df-af78-0046bb58f4aa"
           },
           {
+            "name": "proyecto_tipo",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 85.14805603027344,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "a5be14b6-5314-48dd-a904-050d14bfdf8f"
+          },
+          {
             "name": "titulo",
             "comment": "",
             "dataType": "VARCHAR",
@@ -481,7 +504,7 @@
           "active": false,
           "left": 798.8883,
           "top": 446.6667,
-          "zIndex": 5,
+          "zIndex": 51,
           "widthName": 61.69602966308594,
           "widthComment": 60
         },
@@ -489,7 +512,7 @@
         "id": "9a61ff38-59e0-482f-a24c-cb40c67d5c7c"
       },
       {
-        "name": "",
+        "name": "participacion_tipos",
         "comment": "",
         "columns": [
           {
@@ -567,11 +590,96 @@
           "left": 1299.7772,
           "top": 165.4449,
           "zIndex": 31,
-          "widthName": 60,
+          "widthName": 116.985107421875,
           "widthComment": 60
         },
         "visible": true,
         "id": "0c83c9d3-aeff-4bae-ae6e-0108473564dd"
+      },
+      {
+        "name": "proyecto_tipos",
+        "comment": "",
+        "columns": [
+          {
+            "name": "proyecto_tipo",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 85.14805603027344,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "11d52c75-9aec-4b65-b307-101ba81c302b"
+          },
+          {
+            "name": "titulo",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "840bde8c-59d8-4849-acd6-9882834421bc"
+          },
+          {
+            "name": "descripcion",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 72.00506591796875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "b3364b6d-f71b-4fb2-84a8-516d093e7d5b"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1494.2217,
+          "top": 437.7778,
+          "zIndex": 49,
+          "widthName": 91.37506103515625,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "bce0323a-3069-4393-a02f-86d3aaa85871"
       }
     ],
     "indexes": []
@@ -668,7 +776,7 @@
           "columnIds": [
             "214f88bf-2864-42df-af78-0046bb58f4aa"
           ],
-          "x": 1002.5603275878906,
+          "x": 1008.4623280151367,
           "y": 446.6667,
           "direction": "top"
         },
@@ -710,6 +818,32 @@
         "constraintName": "fk__to_participaciones",
         "visible": true,
         "id": "7abc07b5-2006-460a-8a11-dcbf8ae38c4e"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "bce0323a-3069-4393-a02f-86d3aaa85871",
+          "columnIds": [
+            "11d52c75-9aec-4b65-b307-101ba81c302b"
+          ],
+          "x": 1494.2217,
+          "y": 503.0278,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "9a61ff38-59e0-482f-a24c-cb40c67d5c7c",
+          "columnIds": [
+            "a5be14b6-5314-48dd-a904-050d14bfdf8f"
+          ],
+          "x": 1218.0363560302735,
+          "y": 542.6667,
+          "direction": "right"
+        },
+        "constraintName": "fk__to_proyectos",
+        "visible": true,
+        "id": "eff454ed-10b2-417f-8a34-41b8194e7be1"
       }
     ]
   }
