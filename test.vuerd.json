@@ -586,10 +586,10 @@
           }
         ],
         "ui": {
-          "active": false,
-          "left": 823.5272,
-          "top": 251.6949,
-          "zIndex": 65,
+          "active": true,
+          "left": 887.2772,
+          "top": 271.6949,
+          "zIndex": 66,
           "widthName": 116.985107421875,
           "widthComment": 60
         },
@@ -802,8 +802,8 @@
           "columnIds": [
             "197ce8d6-168e-4c82-94a1-a3b9c182a12e"
           ],
-          "x": 823.5272,
-          "y": 316.94489999999996,
+          "x": 887.2772,
+          "y": 336.9449,
           "direction": "left"
         },
         "end": {
