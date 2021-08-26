@@ -3,8 +3,8 @@
     "version": "2.2.2",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -156,
-    "scrollLeft": -188.66666666666697,
+    "scrollTop": -199.33333333333334,
+    "scrollLeft": -198.33333333333334,
     "zoomLevel": 0.8,
     "show": {
       "tableComment": true,
@@ -116,9 +116,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 0,
-          "top": 0,
-          "zIndex": 53,
+          "left": 36.25,
+          "top": 25,
+          "zIndex": 62,
           "widthName": 60,
           "widthComment": 60
         },
@@ -240,9 +240,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 242.5,
-          "top": 244,
-          "zIndex": 59,
+          "left": 288.75,
+          "top": 251.5,
+          "zIndex": 63,
           "widthName": 73.6170654296875,
           "widthComment": 60
         },
@@ -587,9 +587,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 1134.7772,
-          "top": 24.1949,
-          "zIndex": 57,
+          "left": 823.5272,
+          "top": 251.6949,
+          "zIndex": 65,
           "widthName": 116.985107421875,
           "widthComment": 60
         },
@@ -671,10 +671,10 @@
           }
         ],
         "ui": {
-          "active": true,
-          "left": 1085.4717,
-          "top": 454.0278,
-          "zIndex": 61,
+          "active": false,
+          "left": 382.9717,
+          "top": 814.0278,
+          "zIndex": 64,
           "widthName": 91.37506103515625,
           "widthComment": 60
         },
@@ -698,8 +698,8 @@
           "columnIds": [
             "d9ddf375-037f-4c5b-aa3b-a39a48a980dd"
           ],
-          "x": 98.5,
-          "y": 130.5,
+          "x": 134.75,
+          "y": 155.5,
           "direction": "bottom"
         },
         "end": {
@@ -724,8 +724,8 @@
           "columnIds": [
             "d9ddf375-037f-4c5b-aa3b-a39a48a980dd"
           ],
-          "x": 295.5,
-          "y": 130.5,
+          "x": 331.75,
+          "y": 155.5,
           "direction": "bottom"
         },
         "end": {
@@ -733,8 +733,8 @@
           "columnIds": [
             "208a994a-ba3e-4989-ac7b-d45657d3284c"
           ],
-          "x": 242.5,
-          "y": 299,
+          "x": 288.75,
+          "y": 306.5,
           "direction": "left"
         },
         "constraintName": "fk__to_",
@@ -750,8 +750,8 @@
           "columnIds": [
             "d9ddf375-037f-4c5b-aa3b-a39a48a980dd"
           ],
-          "x": 394,
-          "y": 65.25,
+          "x": 430.25,
+          "y": 90.25,
           "direction": "right"
         },
         "end": {
@@ -785,7 +785,7 @@
           "columnIds": [
             "02e2928b-9bc0-4acf-81b0-cc739c013660"
           ],
-          "x": 801.5460512084961,
+          "x": 690.3565256042481,
           "y": 155.5841,
           "direction": "bottom"
         },
@@ -802,8 +802,8 @@
           "columnIds": [
             "197ce8d6-168e-4c82-94a1-a3b9c182a12e"
           ],
-          "x": 1134.7772,
-          "y": 89.4449,
+          "x": 823.5272,
+          "y": 316.94489999999996,
           "direction": "left"
         },
         "end": {
@@ -811,9 +811,9 @@
           "columnIds": [
             "06e87b75-00f6-4377-89a9-c7874c7d31b1"
           ],
-          "x": 1023.9251024169922,
-          "y": 80.0841,
-          "direction": "right"
+          "x": 912.7355768127442,
+          "y": 155.5841,
+          "direction": "bottom"
         },
         "constraintName": "fk__to_participaciones",
         "visible": true,
@@ -828,18 +828,18 @@
           "columnIds": [
             "11d52c75-9aec-4b65-b307-101ba81c302b"
           ],
-          "x": 1085.4717,
-          "y": 519.2778000000001,
-          "direction": "left"
+          "x": 592.5457280151368,
+          "y": 814.0278,
+          "direction": "top"
         },
         "end": {
           "tableId": "9a61ff38-59e0-482f-a24c-cb40c67d5c7c",
           "columnIds": [
             "a5be14b6-5314-48dd-a904-050d14bfdf8f"
           ],
-          "x": 931.7863560302734,
-          "y": 538.9167,
-          "direction": "right"
+          "x": 722.2123280151367,
+          "y": 634.9167,
+          "direction": "bottom"
         },
         "constraintName": "fk__to_proyectos",
         "visible": true,
